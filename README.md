@@ -1,16 +1,12 @@
-### Hi there 👋
+### Hi there ❤
 
-<!--
-**ALVINU/ALVINU** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```bash
+function git_corb() {
+    if [[ -z "$1" ]]; then
+        echo "missing remote branch name for 'git checkout remote branch'"
+        return 1
+    else
+        git checkout -b "$1" origin/"$1"
+    fi
+}
+```
